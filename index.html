@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HitFit – Hit the Target to Be Fit</title>
+    <meta name="description" content="Hit the target to be fit. HitFit is a camera-controlled personal fitness game that tracks your jumps, squats, and estimated calories burned in real time on hitfit.zainaxes.com.">
+    <link rel="canonical" href="https://hitfit.zainaxes.com/">
+
+    <!-- PWA & Mobile Meta -->
+    <meta name="theme-color" content="#15191C">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="HitFit">
+    <link rel="icon" type="image/svg+xml" href="/icon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- OpenGraph Social Cards -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="HitFit – Hit the Target to Be Fit">
+    <meta property="og:description" content="Hit the target to be fit. Camera-controlled jumping and squatting arcade workout with on-device motion tracking.">
+    <meta property="og:url" content="https://hitfit.zainaxes.com/">
+    <meta property="og:site_name" content="HitFit">
+    <meta property="og:image" content="https://hitfit.zainaxes.com/pwa-512x512.png">
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HitFit – Hit the Target to Be Fit">
+    <meta name="twitter:description" content="Hit the target to be fit. Camera-controlled jumping and squatting arcade workout with on-device motion tracking.">
+    <meta name="twitter:image" content="https://hitfit.zainaxes.com/pwa-512x512.png">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "HitFit",
+      "alternateName": "HitFit - Hit the Target to Be Fit",
+      "url": "https://hitfit.zainaxes.com",
+      "applicationCategory": "HealthAndFitnessApplication",
+      "operatingSystem": "All",
+      "description": "Camera-controlled jumping and squatting exercise game that tracks reps and MET-based calorie burn in real-time.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
+    <!-- Modern Clean Serif Typography: Lora & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,500..900;1,500..900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Configuration -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Lora"', 'Georgia', 'serif'],
+              heading: ['"Playfair Display"', 'Georgia', 'serif'],
+            },
+            colors: {
+              hitfit: {
+                bg: '#15191C',
+                surface: '#1E2328',
+                card: '#22282E',
+                border: '#2E363E',
+                borderLight: '#434E58',
+                text: '#ECEFF2',
+                muted: '#9AA6B2',
+                accent: '#F7B83D',
+                accentHover: '#E5A52A',
+                accentMuted: 'rgba(247, 184, 61, 0.15)',
+                danger: '#FF5C5C',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Lora', Georgia, serif;
+        background-color: #15191C;
+        color: #ECEFF2;
+      }
+      ::-webkit-scrollbar {
+        width: 4px;
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #2E363E;
+        border-radius: 2px;
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-hitfit-bg text-hitfit-text antialiased selection:bg-hitfit-accent selection:text-hitfit-bg">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

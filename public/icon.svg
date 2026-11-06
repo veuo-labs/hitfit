@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="12" fill="#15191C"/>
+  <circle cx="32" cy="32" r="28" stroke="#F7B83D" stroke-width="2" fill="none" opacity="0.3"/>
+  <!-- Modern Athletic Emblem -->
+  <path d="M22 16 H42 V22 H22 Z" fill="#F7B83D"/>
+  <rect x="24" y="24" width="16" height="18" rx="2" fill="#ECEFF2"/>
+  <rect x="28" y="26" width="8" height="14" fill="#F7B83D"/>
+  <rect x="20" y="44" width="8" height="12" fill="#ECEFF2"/>
+  <rect x="36" y="44" width="8" height="12" fill="#ECEFF2"/>
+  <line x1="12" y1="58" x2="52" y2="58" stroke="#F7B83D" stroke-width="3" stroke-linecap="round"/>
+</svg>

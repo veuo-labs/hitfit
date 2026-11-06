@@ -1,0 +1,6 @@
+# robots.txt for HitFit (https://hitfit.zainaxes.com)
+User-agent: *
+Allow: /
+
+# Sitemap reference
+Sitemap: https://hitfit.zainaxes.com/sitemap.xml

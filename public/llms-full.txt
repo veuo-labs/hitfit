@@ -1,0 +1,31 @@
+# HitFit — Complete Technical Specification
+
+## Application Identity
+- **Name**: HitFit
+- **Tagline**: Hit the target to be fit.
+- **Canonical Website**: https://hitfit.zainaxes.com
+- **Author/Branding**: zainaxes
+
+## Architecture & Technology Stack
+- **Frontend Framework**: React 19, TypeScript, Vite.
+- **Styling**: Tailwind CSS with custom Modern Serif typography (Lora & Playfair Display) and dark theme:
+  - Background: `#15191C`
+  - Text: `#ECEFF2`
+  - Accent: `#F7B83D`
+- **Pose Detection**: Client-side Google MediaPipe `@mediapipe/tasks-vision` Pose Landmarker running on WebAssembly + WebGL.
+- **Sound Engine**: Web Audio API oscillator and noise buffer synthesis (no external audio assets).
+- **Offline / PWA**: VitePWA with Workbox runtime caching for Google Fonts, standalone manifest, and home screen installation support.
+- **Backend**: Node.js Express server on port 3000 handling Web Push VAPID key exchange, subscription storage, and `node-cron` daily scheduled delivery.
+
+## Energy Expenditure (MET) Calculation
+The application calculates conservative energy expenditure estimates:
+- Formula: `kcal = MET * 3.5 * weightKg / 200 * durationMinutes`
+- `MET_JUMP = 9.0` (Assuming 1.5s active muscular engagement per repetition)
+- `MET_SIT_STAND = 5.5` (Assuming 2.5s cycle per bodyweight squat)
+- `MET_ACTIVE_PACING = 4.0` (Dynamic standing and gameplay pacing)
+- Default Reference: 70 kg (154.3 lbs) when user skips entering personal weight.
+
+## Privacy & Security
+- **Camera Access**: In-browser only. No frames, snapshots, or recordings are sent over the network.
+- **User Profile & History**: Stored in client-side `localStorage`.
+- **Push Subscriptions**: Stored securely on the server with user-specified reminder times and IANA timezones.

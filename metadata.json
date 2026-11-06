@@ -1,0 +1,8 @@
+{
+  "name": "Leap Dino",
+  "description": "Turn your screen time into a workout. Jump, sweat, and dodge your way through the desert in this body-tracked arcade experience.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": []
+}
