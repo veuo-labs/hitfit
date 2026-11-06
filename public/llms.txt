@@ -5,10 +5,15 @@
 ## Overview
 - **Domain**: https://hitfit.zainaxes.com
 - **Tagline**: Hit the target to be fit.
-- **Creator**: zainaxes (https://hitfit.zainaxes.com)
+- **Creator**: Zain Ul Abidin (Solo Freelancer)
+- **Brand**: zainaxes (https://zainaxes.com)
+- **Developer Products**:
+  - axeskit: https://axeskit.zainaxes.com
+  - axeslab: https://axeslab.zainaxes.com
+  - axescontrol: https://axescontrol.zainaxes.com
 - **Primary Exercises**: Physical jumps and sit-to-stand (squats).
-- **Core Technology**: Google MediaPipe Pose Landmarker running 100% locally on-device via WebAssembly and WebGL/GPU acceleration.
-- **Privacy Model**: Zero camera recording, zero cloud video streaming. All computer vision inferences are calculated strictly client-side on the user's browser.
+- **Core Technology**: 100% on-device optical and computer vision motion tracking.
+- **Privacy Model**: Zero camera recording, zero cloud video streaming. All motion inferences are calculated strictly client-side on the user's browser.
 - **Calorie Estimation Engine**: Standardized Compendium of Physical Activities MET formulation (kcal = MET * 3.5 * weight_kg / 200 * duration_minutes), with customizable user weight or generic 70 kg reference.
 - **PWA Capabilities**: Installable Progressive Web App with offline service worker precaching, standalone display, and scheduled Web Push reminders.
 
@@ -21,4 +26,4 @@
 ## Movement Detection Details
 - **Jump Detection**: Measures upward shoulder vertical velocity spike. One physical jump triggers an airborne leap for the runner character and counts as one exercise repetition.
 - **Sit-to-Stand Detection**: Tracks vertical drop against an auto-calibrated standing baseline. When the user squats down, the on-screen runner ducks/crouches. When the user returns to standing, one squat repetition is recorded.
-- **Controls Fallback**: Spacebar / Up Arrow to jump, Down Arrow / S to squat/duck, or on-screen touch buttons for mobile users.
+- **Controls**: 100% camera-controlled body movements. No keyboard simulation or on-screen cheat buttons. Jump over hurdles; squat down beneath flying birds.

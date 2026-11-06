@@ -1,0 +1,7 @@
+# Cloudflare Pages / Workers Configuration for HitFit
+name = "hitfit"
+compatibility_date = "2024-01-01"
+pages_build_output_dir = "dist"
+
+[vars]
+DOMAIN = "hitfit.zainaxes.com"

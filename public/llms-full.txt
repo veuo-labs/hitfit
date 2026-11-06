@@ -4,7 +4,12 @@
 - **Name**: HitFit
 - **Tagline**: Hit the target to be fit.
 - **Canonical Website**: https://hitfit.zainaxes.com
-- **Author/Branding**: zainaxes
+- **Creator**: Zain Ul Abidin (Solo Freelancer)
+- **Brand Portfolio**: https://zainaxes.com
+- **Developer Products**:
+  - axeskit: https://axeskit.zainaxes.com
+  - axeslab: https://axeslab.zainaxes.com
+  - axescontrol: https://axescontrol.zainaxes.com
 
 ## Architecture & Technology Stack
 - **Frontend Framework**: React 19, TypeScript, Vite.
